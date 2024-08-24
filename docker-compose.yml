@@ -1,0 +1,10 @@
+version: '3'
+services:
+  api:
+    build: ./api-conversor
+    ports:
+      - "3000:3000"
+  front:
+    build: ./front_conversor
+    ports:
+      - "80:80"
